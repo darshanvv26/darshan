@@ -1,0 +1,10 @@
+This is code file to describe about the git basics
+
+-> Git is a version control system
+-> Track changes to your files and collaborate with others
+
+-> GIT is a software and can be installed on your computer
+-> Github is a web-based hosting service for Git repositories
+
+-> Install git from 'https://git-scm.com/downloads'
+-> You cannot push your code to Github without ssh-key setup
