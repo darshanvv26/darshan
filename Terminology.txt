@@ -1,0 +1,70 @@
+-> Different terminology
+    -> They don’t call it a folder, they call it a repository
+    -> They don’t call it alternative timeline, they call it branch
+
+
+-> To check your git version
+    ** git --version
+
+
+-> A repository is a collection of files and directories that are stored together
+    -> At any point you can run the following command to see the current state of your repository
+    ** git status
+
+
+-> You can change your username, email, and other settings
+-> Git config file that stores all the settings that you have changed
+    ** git config --global user.email "your-email@example.com"
+    ** git config --global user.name "Your Name"
+
+
+-> To show you all the settings that you have changed
+    ** git config --list
+
+
+-> Creating a repository is a process of creating a new folder
+    -> You are just asking git to track it
+    ** git init
+    -> This command will create a new folder on your system and initialize it as a git repository. 
+    -> This adds a hidden .git folder to your project.
+
+
+-> Commit is a way to save your changes to your repository
+-> Flow of git (Write -> Add -> Commit)
+
+
+-> Complete git Flow (basic flow and more important one)
+    [
+        ** git init -> (Working directory) -> ** git add <file name> -> (Staging area) -> ** git commit -m "some message" -> (Repo) -> ** git push origin main -> Github
+    ]
+
+
+-> Stage is a way to tell git to track a particular file or folder
+-> Here we ask git to track our files, we need to add files by using 'git add .' command
+    ** git init
+    ** git add <file> <file2>
+    ** git status
+-> Currently our files are in staging area
+
+
+-> Now we need to commit our staged files
+    ** git commit -m "commit message"
+    ** git status
+-> The -m flag is used to add a message to the commit.
+-> This message is a short description of the changes that were made
+
+
+-> Logs command (logs) will show you the history of your repository
+    ** git log
+    ** git log --oneline
+-> --oneline flag to show only the commit message (insted of showing whole thing like hash address it only shows commit message in a compact one line)
+
+
+-> You can change the default code editor in your system to vscode
+    ** git config --global core.editor "code --wait"
+
+
+-> We can add .gitignore folder and tell git to ignore files of our wish
+-> It is a way to prevent git from tracking certain files or folders
+-> You can create a gitignore file and add list of files and folders to ignore
+
