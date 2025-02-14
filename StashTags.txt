@@ -1,0 +1,84 @@
+--------------------------------- diff -------------------------------------
+
+-> The 'git diff' is an informative command that shows the differences between two commits
+
+
+-> The command to show the changes between your last commit and the staging area is
+    ** git diff --staged
+
+
+-> The command to compare changes between branches is
+    ** git diff <branch_name1> <branch_name2>
+                    or
+    ** git diff branch_name1..branch_name2
+
+
+-> The command to compare differences between two commits is
+    ** git diff <commit_hash1> <commit_hash2>
+
+
+------------------------------------ stash -------------------------------------------
+
+-> Stash is a way to save your changes in a temporary location
+    ** git stash
+
+
+-> We can also name the stash using 
+    ** git stash save "stash tags files to be saved"
+
+
+-> We can view stash list by using
+    ** git stash list
+
+
+-> We can apply stash by using 
+    ** git stash apply
+
+
+-> We can apply specific stash using
+    ** git stash apply stash@{0}
+
+
+-> We can apply and delete/drop stash using
+    ** git stash pop
+
+
+-> We can apply stash to a specific branch using 
+    ** git stash apply stash@{0} <branch_name>
+
+
+-> We can clear stash list by using
+    ** git stash clear
+
+
+------------------------------------- tags -----------------------------------------
+
+-> For our reference we can attach a named tags to our commits, beforehand only commits will be having commit message but this tags will give message in our own refered way
+
+
+-> We can create a tag using
+    ** git tag <tag_name>
+
+
+-> We can add annotated tag using (annotated tag is a detailed informative message of user)
+    ** git tag -a <tag_name> -m "Release 1.0"
+
+
+-> To list all the tags we use
+    ** git tag
+
+
+-> We can tag a specific commit using
+    ** git tag <tag_name> <commit_hash>
+
+
+-> We can push our tag names to our remote repository
+    ** git push origin <tag_name>
+
+
+-> We can delete tag by using
+    ** git tag -d <tag_name>
+
+
+-> We can delete tag in remote repository by using
+    ** git push origin :<tag_name>
