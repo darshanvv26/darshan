@@ -1,0 +1,54 @@
+-> Branches are a way to work on different versions of a project at the same time
+
+
+-> The HEAD is a pointer to the current branch that you are working on
+
+
+-> Command used to list all the branches is
+    ** git branch
+
+
+-> Command used to create new branch is
+    ** git branch <branch_name>
+
+
+-> Command used to switch from one branch to other is
+    ** git switch <branch_name> (branch should be existing)
+    ** git checkout <branch_name>
+
+
+-> Command used to show commit history of current branch is
+    ** git log
+
+
+-> Command used to create and switch simultaneously is
+    ** git switch -c <branch_name>
+
+
+-> Note
+    -> Commit before switching to a branch
+    -> Go to .git folder and checkout to the HEAD file
+
+
+-> Merging branches when there are no conflicts
+    -> Fast forward merge
+    ** git switch main
+    ** git merge <branch_name>
+
+
+-> Merging branches when there are conflicts
+    -> Not fast forward merge
+    ** git switch main
+    ** git merge <branch_name>
+    -> Tough commands are same difference lies in resolving conflicts
+    -> We have to manually resolve conflicts
+
+
+-> Command to rename a branch
+    ** git branch -m <old_branch_name> <new_branch_name>
+
+
+-> Command to delete a branch
+    ** git branch -d <branch_name>
+
+
