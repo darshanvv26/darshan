@@ -1,0 +1,53 @@
+-> Github is a web-based Git repository hosting service
+
+-> Github provides a variety of features and tools that make it easy to manage and track your code, including issues, pull requests, and code reviews.
+
+
+-> We need to configure our git config file
+    ** git config --global user.email "your-email@example.com"
+    ** git config --global user.name "Your Name"
+
+
+-> We can check our config settings using
+    ** git config --list
+
+
+-> Setup ssh key and add to github
+-> Generate a new SSH key using
+    ** ssh-keygen -t ed25519 -C "your-email@chaicode.com"
+
+
+-> After generating the key, you need to save it to your computer
+-> Add key to your ssh-agent
+-> Add key to github
+
+
+-> We need to check out remote url of github to which repository files are been pushed using
+    ** git remote -v (This will show the remote url)
+
+
+-> We can add remote repository using
+    ** git remote add origin https://github.com/darshanvv26/darshan
+-> Origin is the name of the remote repository, used to refer to the remote repository in the future
+
+
+-> We can push code to remote repository using
+    ** git push <remote_name> <branch_name>
+    ** git push origin main
+
+
+-> We can setup an upstream remote using
+    ** git remote add upstream <remote-url>
+                    or
+    ** git remote add -u <remote-url>
+                    or 
+    ** git push -u origin main (directly push and set upstream)
+-> Setting up an upstream remote is useful when you want to keep your local repository up to date with the remote repository
+
+
+-> There are two ways to get code from a remote repository:
+    -> fetch the code (to download code from remote repository to local repository)
+        ** git fetch <remote_name>
+    -> pull the code (to download code from remote repository and merge with local repository)
+        ** git pull <remote_name> <branch_name>
+        ** git pull origin main
